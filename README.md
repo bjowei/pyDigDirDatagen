@@ -14,7 +14,7 @@ Norske navn: https://no.wikipedia.org/wiki/Liste_over_norske_mannsnavn , https:/
 
 ## Genereringsalgoritmen
 
-Datasettet genererer $$N$$ Menn og $$M$$ Kvinner til totalt $$M + N$$ personar. Desse blir tildelt ein tilfeldig dag i eit tilfeldig år i intervallet 1919-2019. Ut i frå denne datoen blir eit tilfeldig personnr generert på formen ddmmåå $+$ tilfeldig tall mellom $$00001 - 99999$$. Namn og etternamn er tilfeldig sampla frå datasett over norske namn og etternamn. Postnummer og poststad er tilfeldig sampla frå datasett over postnummer.
+Datasettet genererer N Menn og M Kvinner til totalt M + N personar. Desse blir tildelt ein tilfeldig dag i eit tilfeldig år i intervallet 1919-2019. Ut i frå denne datoen blir eit tilfeldig personnr generert på formen ddmmåå + tilfeldig tall mellom 00001 - 99999. Namn og etternamn er tilfeldig sampla frå datasett over norske namn og etternamn. Postnummer og poststad er tilfeldig sampla frå datasett over postnummer.
 
 ### VIGO-data
 For å lagre vigo-data om ein person bli ein python klasse brukt til å lage tilfeldige karakterar og fråver. Karakterar er tilfeldigt tatt i intervallet 1-6 og fråver er normalfordelt rundt 5% med standardavvik på 3%. Hittil er det kun faga RLE, Naturfag og Matematikk som er implementert.
