@@ -22,7 +22,23 @@ For å lagre vigo-data om ein person bli ein python klasse brukt til å lage til
 
 ## Helse-norge data
 
-Helse-norge data er i denne versjonen kun fastlege. Det blir generert eit tilfeldig navn til fastlegen og stad for fastlegekontoret. 
+Helse-norge data er delt opp i 4 deler. Fastlege, Resepter, Legetimer og Vaksiner. Alle desse har i drupal sine eigne routinger som returnerer data av den aktuelle typen
+
+### Fastlege
+
+Genererer tilfeldig navn, legekontor og telefonnummer for å være fastlege til eit gitt personnummer.
+
+### Resepter
+
+For eit gitt perssonnummer, trekk ut ein tilfeldig resept fra datasettet medisin.csv og gi det ein tilfeldig dato.
+
+### Legetime
+
+For eit gitt personnummer, opprett ein tilfeldig lege, dato for legetime, type legetime og sjukehus + stad. Alle sampla frå datasett i csv filer.
+
+### Vaksiner
+
+For eit gitt personnummer, opprett tilfeldige vaksinetyper sampla frå datasett og sett vaksinasjonsdato til å være ein tilfeldig dato.
 
 ## Lånekassen-data
 
@@ -31,3 +47,7 @@ Jupyter notebooken genererer data over forskjellige typer stipend. Kva stipend s
 ## Skatteetaten-data
 
  Skatteetaten data sampler tilfeldige inntekter i ein skeiv fordeling der medianverdi er 20000 og gjennomsnitt er 30000. Skatt er utrekna trinnvis fra 50000 opp til 100000. I tilegg er selskap som henter skattekort tilfeldige selskap fra Noregs 500 største bedrifter.
+ 
+## Digipost
+
+Fir eit gitt perssonnummer, lag tilfeldige brev det emnet og avssender er sampla fra datasett medan innholdet er automatisk generert.
