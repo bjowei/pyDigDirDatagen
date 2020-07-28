@@ -2,6 +2,38 @@
 
 av Bjørn Christian Weinbach, DigDir Campar.
 
+## Installasjon
+
+For å køyre denne notebooken trenger du jupyter på din PC. Eg anbefaler at ein installerer følgande program:
+
+- Visual Studio Code (link: https://code.visualstudio.com/)
+- Anaconda (link: https://www.anaconda.com/products/individual)
+
+### Visual Studio Code
+
+I Visual Studio Code anbefalar eg å installere følgande extensions:
+
+- Python
+- Rainbow csv
+
+Python extensionen lar deg redigere og køyre jupyter notebooks i visual studio code istadenfor å hoste ein jupyter økt i terminalen og opne den i nettlesaren.
+
+### Anaconda og anacondamiljø
+
+Python-koden i notebooken krever ein del bibiliotek, t.d scipy, numpy, pandas, faker osv. For å kjapt installere dette på din PC og for å håndtere bibiliotek på ein god
+måte er det anbefalt å bruke anaconda. 
+
+Aktiver anaconda miljøet i vscode og opne terminalen i rot mappa med miljøet aktivert. (oppsett: https://code.visualstudio.com/docs/python/environments)
+
+For å importere anacondamiljøet køyr kommandoen: `conda env create -f pydigdir.yml`
+
+Då er alle bibiliotek som ein treng for å køyre denne notebooken (og dei andre jupyter notebookane laga på DigDirCamp) installert.
+
+### Litt om jupyter notebook
+
+Ein jupyter notebook består av blokker som kan vere tekst eller kode. Det er vanleg praksis å legge små blokker med kode etter kvarandre med forklarande tekst.
+Dette gjer at koden i cellene bygger på kvarandre og ein er nøydd å køyre koden frå topp til bunn (vs code har ein eigen knapp for å gjere dette automatisk)
+
 ## Bakgrunn
 
 I sommar skal me lage ein applikasjon som skal demonstrere korleis tilgang til eins eigne persondata kan gjere det enklare å navigere i den norske offentlege sektor, spesielt for ungdom. Denne dataen er ikkje tilgjengeleg vha API i dag og vi er nøydd å generere denne dataen sjølv. Denne jupyter notebooken inneheld python-kode for generering av syntetiske data for ein populasjon som blei brukt som ein del av forarbeidet til prosjektet til DigDir Camparane i 2020.
